@@ -8,9 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+class ViewController: UIViewController {
+    @IBOutlet weak var redrose: UIImageView!
+    @IBOutlet weak var bluerose: UIImageView!
+    @IBOutlet weak var HideRedBtn: UIButton!
+    @IBOutlet weak var HideBlueBtn: UIButton!
+    
+    
+        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -19,7 +25,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func HideRed(sender: AnyObject) {
+        redrose.hidden = true
+    }
+    @IBAction func HideBlue(sender: AnyObject) {
+        bluerose.hidden = true
+    }
 
 }
 
